@@ -127,8 +127,10 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     
-    # Allow all host.
-    ALLOWED_HOSTS = ['*']
+    # Allow only Heroku to host project.
+    ALLOWED_HOSTS = ['learnlearn.herokuapp.com']
+    
+    DEBUG = False
 
     # Static asset configuration
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
