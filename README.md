@@ -1,0 +1,1 @@
+The Learning Log is built with Django. It keeps track of what a user is currently learning by allowing them to make entries based on the topic they are learning about. It is based on project from Eric Matthes's book Python Crash Course.
